@@ -1,8 +1,16 @@
 // ==UserScript==
 // @name         PixAI Hide Specific Users
+// @name:ja      PixAI 特定ユーザー非表示
+// @name:zh-CN   PixAI 隐藏特定用户
+// @name:zh-TW   PixAI 隱藏特定使用者
+// @name:ko      PixAI 특정 사용자 숨기기
 // @namespace    https://github.com/syumari/PixAI-Hide-Specific-Users
 // @version      1.0.0
-// @description  Hide artworks from specific users on PixAI. Supports blocking by username (@user) which automatically resolves to their current display name.
+// @description  Hide artworks from specific users on PixAI. Supports blocking by @username which automatically resolves to their current display name via GraphQL API.
+// @description:ja PixAI 上の特定ユーザーの作品を非表示にします。@username でブロックすると GraphQL API で表示名を自動取得するため、ニックネーム変更後も機能し続けます。
+// @description:zh-CN 隐藏 PixAI 上特定用户的作品。支持通过 @username 屏蔽，脚本会自动通过 GraphQL API 获取当前显示名，即使用户更改昵称也能持续生效。
+// @description:zh-TW 隱藏 PixAI 上特定使用者的作品。支援透過 @username 封鎖，腳本會自動透過 GraphQL API 取得目前顯示名稱，即使使用者更改暱稱也能持續運作。
+// @description:ko PixAI에서 특정 사용자의 작품을 숨깁니다. @username으로 차단하면 GraphQL API를 통해 현재 표시 이름을 자동으로 가져오므로 닉네임이 변경되어도 계속 작동합니다.
 // @author       syumari
 // @match        https://pixai.art/*
 // @run-at       document-idle
